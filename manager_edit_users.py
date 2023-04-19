@@ -6,7 +6,7 @@ cursor = connection.cursor()
 
 def update_person(person_id): 
     while True:
-        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit a Users First Name\n[B] Edit a Users Last Name \n[C] Edit a email\n[D] Edit a phone number \n[E] Activate User\n[F] Deactivate User\n[P] Update a password\n[R] Return to Main Menu\n\n' )
+        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit a Users First Name\n[B] Edit a Users Last Name \n[C] Edit a email\n[D] Edit a phone number \n[E] Activate User\n[F] Deactivate User\n[P] Update a password\n\n\n' )
 
         if manager_view == 'A':  # update_person(update_user)
             print ('~~~~~~Edit a Ranch User~~~~~~~')
@@ -106,7 +106,6 @@ def update_person(person_id):
             if answer == "n":
                 return
             
-        elif manager_view == 'R':
-            return
+     
 connection.commit()
    

@@ -5,7 +5,7 @@ cursor = connection.cursor()
 
 def update_assessment(assessment_id): 
     while True:
-        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit assessment Name\n[B] Edit the date that the assessment was created \n[R] Return to Main Menu\n\n' )
+        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit assessment Name\n[B] Edit the date that the assessment was created \n\n\n' )
 
         if manager_view == 'A':
             print ('~~~~~~Edit an assessment~~~~~~~')
@@ -39,8 +39,7 @@ def update_assessment(assessment_id):
         
 
            
-        elif manager_view == 'R':
-            return
+     
         assessment_value = ['']
         query = ''
     

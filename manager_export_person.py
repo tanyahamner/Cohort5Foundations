@@ -4,7 +4,7 @@ import csv
 from sqlite3 import Error
 
 
-def export_person(): 
+def export_person(person_id): 
 
   conn=sql.connect('RanchDatabase.db')
   
@@ -20,7 +20,7 @@ def export_person():
  # Export data into CSV file
   print ('Exporting data into CSV............')
   cursor = conn.cursor()
-  rows = cursor.execute("select assessment_results_id from Assessment_Results where person_id = ?", ).fetchall()
+  rows = cursor.execute("select assessment_results_id from Assessment_Results where person_id = {person_id}", ).fetchone()
   with open("person_results_data.csv", "w") as csv_file:
       csv_writer = csv.writer(csv_file, delimiter="\t")
       csv_writer.writerow([i[0] for i in cursor.description])

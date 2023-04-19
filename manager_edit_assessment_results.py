@@ -5,7 +5,7 @@ cursor = connection.cursor()
 
 def update_assessment_result(assessment_result_id): 
     while True:
-        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit Score\n[B] Edit the date that the assessment test was taken\n[C] Edit the time that the assessment test was taken\n[D] Edit the manager id of the results\n[E] Edit the person id that took the results\n[F] Edit the competency id of the result\n[G] Edit the assessment id of the results\n[R] Return to Main Menu\n\n' )
+        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit Score\n[B] Edit the date that the assessment test was taken\n[C] Edit the time that the assessment test was taken\n[D] Edit the manager id of the results\n[E] Edit the person id that took the results\n[F] Edit the competency id of the result\n[G] Edit the assessment id of the results\n\n\n' )
 
         if manager_view == 'A':
             print ('~~~~~~Edit a Assessment Result~~~~~~~')
@@ -112,8 +112,7 @@ def update_assessment_result(assessment_result_id):
             if answer == "n":
                 return
 
-        elif manager_view == 'R':
-            return
+     
         result_value = ['']
         query = ''
     

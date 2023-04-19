@@ -5,7 +5,7 @@ cursor = connection.cursor()
 
 def update_competency(competency_id): 
     while True:
-        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit Competency Name\n[B] Edit the date that the competency was created \n[R] Return to Main Menu\n\n' )
+        manager_view = input( '\n\nWhat would you like to update?  \n\n[A] Edit Competency Name\n[B] Edit the date that the competency was created \n\n\n' )
 
         if manager_view == 'A':
             print ('~~~~~~Edit a Competency~~~~~~~')
@@ -38,9 +38,6 @@ def update_competency(competency_id):
               return
         
 
-           
-        elif manager_view == 'R':
-            break
         competency_value = ['']
         query = ''
     
