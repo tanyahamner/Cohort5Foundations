@@ -15,7 +15,6 @@ from manager_search import search_user, search_assessment, search_competency
 from user_view_functions import user_view_assessment_results
 from manager_import_function import import_csv
 
-# from csv_results import import_score
 connection = sqlite3.connect('RanchDatabase.db')
 
 cursor = connection.cursor()
@@ -105,7 +104,7 @@ def mangmenu():
                     break   
         elif user == '10':  #delete 
             delete_id = input("Please enter the assessment name that you need to remove from the database: \n ")
-            # delete_result(delete_id)        
+               
         elif user == '11': #Import
             print ('~~~~~~Import Assessment Results~~~~~~~')
             import_csv()

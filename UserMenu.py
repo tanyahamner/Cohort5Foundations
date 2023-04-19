@@ -1,7 +1,6 @@
 import sqlite3
 from user_view_functions import user_profile, user_view_assessment_results, update_user_person
 from Logout import logout
-# from edit_user_function import update_userperson
 connection = sqlite3.connect('RanchDatabase.db')
 
 cursor = connection.cursor()

@@ -1,6 +1,5 @@
 import sqlite3
-# from ManagerMenu import mangmenu
-# from new_login_function import  user_manager
+
 connection = sqlite3.connect('RanchDatabase.db')
 
 cursor = connection.cursor()

@@ -1,5 +1,4 @@
 import sqlite3
-# from ManagerMenu import mangmenu
 from Login import  user_manager
 connection = sqlite3.connect('RanchDatabase.db')
 

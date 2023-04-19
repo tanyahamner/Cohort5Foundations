@@ -3,10 +3,8 @@ import bcrypt
 
 connection = sqlite3.connect('RanchDatabase.db')
 cursor = connection.cursor()
-#THIS PAGE IS DONE AND WORKS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!THIS PAGE IS DONE AND WORKS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working
-def add_user(): #Working #Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working#Working
-  
+
+def add_user():
     print('\n~~~~~Add a User to the Ranch~~~~~\n')
     first_name = input('Please enter a first name: ')
     last_name = input('Please enter a last name: ')
